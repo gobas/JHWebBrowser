@@ -308,9 +308,10 @@
 
 - (void)doneButtonPressed {
 	if (self.navigationController) {
+        
 		[self.navigationController popViewControllerAnimated:YES];
 	} else {
-		[self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
 	}
 }
 
