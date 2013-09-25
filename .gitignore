@@ -1,0 +1,4 @@
+# Files which should be ignored #
+DerivedData
+build
+.DS_Store
