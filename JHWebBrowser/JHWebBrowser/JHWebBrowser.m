@@ -85,6 +85,12 @@
 {
     [super viewDidLoad];
     
+    //fix problem in iOS 7 displaying behind the navigationbar
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+    
     // Default to loading text
 	titleLabel.text = @"Loading...";
 	
